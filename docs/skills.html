@@ -1,85 +1,94 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Skills & Game Project - Riley Edwards</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Skills and game project showcase of Riley Edwards, including a maze game built with C++ and SFML." />
+		<meta name="description" content="Skills and game project showcase of Riley Edwards, including a maze game built with C++ and SFML and a narrative game in Unreal Engine." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Image container rows */
+			.screenshot-row {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 10px;
+				margin-bottom: 15px;
+			}
+			.screenshot-row img {
+				width: 350px;
+				height: auto;
+				border-radius: 8px;
+				display: block;
+				object-fit: contain;
+			}
+			.screenshot-row.single img {
+				width: 720px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
 		<div id="wrapper">
-
-			<!-- Main -->
 			<div id="main">
 				<div class="inner">
 
-					<!-- Header -->
 					<header id="header">
 						<a href="index.html" class="logo"><strong>Portfolio</strong> by Riley Edwards</a>
 					</header>
 
-					<!-- Content -->
 					<section id="banner">
 						<div class="content">
+
+							<!-- Maze Runner Project -->
 							<header>
 								<h1>Game Project: Maze Runner</h1>
 							</header>
-							
-							<div style="display: flex; gap: 10px; margin-bottom: 20px;">
-								<span class="image">
-									<img src="images/GameScreen.png" alt="Game Screenshot 1" style="width: 600px; border-radius: 8px;">
-								</span>
-								<span class="image">
-									<img src="images/LoginScreen.png" alt="Game Screenshot 2" style="width: 250px; border-radius: 8px;">
-								</span>
+							<p>This was my programming module project where I built a maze game using C++ and SFML — a library I had no prior experience with. I developed a login system, a working GUI, a random maze generator, scoring, a timer, and a game-over state. It was my first time putting so many systems together into one playable project.</p>
+
+							<div class="screenshot-row">
+								<span class="image"><img src="images/GameScreen.png" alt="Maze Runner gameplay"></span>
+								<span class="image"><img src="images/LoginScreen.png" alt="Maze Runner login screen"></span>
 							</div>
-							
-							<header>
-								<h1>Game Project: 2D Narrative Game</h1>
-							</header>
-							<div style="display: flex; gap: 10px; margin-bottom: 20px;">
-								<span class="image">
-									<img src="images/GameScreen.png" alt="Game Screenshot 1" style="width: 600px; border-radius: 8px;">
-								</span>
-								<span class="image">
-									<img src="images/LoginScreen.png" alt="Game Screenshot 2" style="width: 250px; border-radius: 8px;">
-								</span>
-							</div>
+
+							<h2>Problem Solving & Learning SFML</h2>
+							<p>Since SFML wasn’t taught in class, I had to teach myself through tutorials and forums. The event loop and rendering system were confusing at first, but I slowly figured them out through trial and error.</p>
+
+							<h2>Debugging & Testing</h2>
+							<p>I regularly tested features such as timers, scores, and edge cases like rapid menu clicks. This made me more confident at spotting and fixing bugs quickly.</p>
+
+							<h2>Planning & Time Management</h2>
+							<p>I kept myself on track by breaking the project into small steps — first the login system, then scoring, then timers, and so on. That helped me steadily build towards a finished game without losing focus.</p>
 
 							<hr class="major" />
 
-							<h2>Problem Solving in Game Development</h2>
-							<p>
-								During my programming module, I created a maze game using C++ and SFML — a library I had no prior experience with. 
-								Challenges included developing a working GUI system and implementing a random maze generator. I also added a login system, scoring, a game-over state, and a timer.
-								These demonstrate my ability to quickly learn new tools and combine systems effectively — an essential skill in game and software development.
-							</p>
+							<!-- Narrative Game Project -->
+							<header>
+								<h1>Game Project: 2D Narrative Game</h1>
+							</header>
+							<p>This project is where I started learning Unreal Engine from scratch. At first it felt overwhelming, but I managed to get comfortable with the basics: setting up projects, using the editor, and understanding how levels and assets fit together. I’m still far from an expert, but I’ve built a decent foundation for making small games and experimenting with ideas.</p>
 
-							<h2>Self-Teaching SFML</h2>
-							<p>
-								SFML wasn't taught during lectures, so I independently followed tutorials and forums to learn how to use it.
-								Understanding the event loop structure was tricky at first, but I gradually adapted to it and overcame rendering issues through further research.
-							</p>
+							<div class="screenshot-row">
+								<span class="image"><img src="images/MainGame.png" alt="Narrative game main gameplay"></span>
+								<span class="image"><img src="images/MenuScreen.png" alt="Narrative game menu"></span>
+							</div>
+							<div class="screenshot-row">
+								<span class="image"><img src="images/DoorToCafe.png" alt="Door interaction"></span>
+								<span class="image"><img src="images/CafeScreen.png" alt="Inside the café"></span>
+							</div>
+							<div class="screenshot-row single">
+								<span class="image"><img src="images/Options.png" alt="Pause menu options"></span>
+							</div>
 
-							<h2>Debugging and Testing</h2>
-							<p>
-								I regularly tested my game to make sure all features worked. This included verifying the login system, making sure timers and scores updated correctly,
-								and testing edge cases like timeouts or rapid menu clicks. Through this, I developed a better understanding of how my code interacted and became quicker at spotting bugs.
-							</p>
+							<h2>Using C++ and Blueprints</h2>
+							<p>I learnt how Unreal handles gameplay logic through C++, which was very different from the C++ I’d used before. Alongside that, I used Blueprints for UI and simple behaviours like menus and buttons. Mixing both approaches helped me see how flexible Unreal can be.</p>
 
-							<h2>Planning and Time Management</h2>
-							<p>
-								I listed all the features I wanted and broke them into small tasks, such as completing the login system first, 
-								then moving onto scoring and timers. This helped me stay organised and make steady progress.
-							</p>
+							<h2>Custom Visuals</h2>
+							<p>I made some basic sprites and textures and brought them into Unreal. They weren’t professional quality, but it showed me how to get my own visuals into the engine and use them in-game, which made the project feel more personal.</p>
+
+							<h2>Small but Important Features</h2>
+							<p>I added interaction systems like clicking on doors to move between levels, and simple saving options inside the pause menu. These may sound small, but they taught me how to design interactive elements that make a game feel more complete.</p>
+
 						</div>
 					</section>
 
@@ -111,7 +120,6 @@
 					<footer id="footer">
 						<p class="copyright">
 							&copy; Riley Edwards. All rights reserved.  
-							Demo images: <a href="https://unsplash.com">Unsplash</a>.  
 							Design: <a href="https://html5up.net">HTML5 UP</a>.
 						</p>
 					</footer>
@@ -120,12 +128,10 @@
 			</div>
 		</div>
 
-		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
