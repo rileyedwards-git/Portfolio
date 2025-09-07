@@ -8,28 +8,32 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			/* Image container rows */
-			.screenshot-row {
-				display: flex;
-				justify-content: center;
-				align-items: flex-start;
-				gap: 8px; /* small consistent gap */
-				margin-bottom: 15px;
-			}
+.screenshot-row {
+	display: flex;
+	justify-content: center; /* keeps row centred */
+	align-items: flex-start;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	gap: 8px; /* consistent small gap */
+}
 
-			.screenshot-row img {
-				width: 100%;
-				max-width: 100%; 
-				flex: 1 1 0; /* forces equal sizing */
-				height: auto;
-				border-radius: 8px;
-				display: block;
-				object-fit: contain;
-			}
+.screenshot-row img {
+	flex: 0 0 48%; /* each image takes ~48% of the row */
+	height: auto;
+	border-radius: 8px;
+	display: block;
+	object-fit: contain;
+}
 
-			.screenshot-row.single img {
-				flex: 1 1 auto;
-				max-width: 100%; /* full width for single images */
-			}
+.screenshot-row.single img {
+	flex: 0 0 100%; /* single image spans full width */
+	max-width: 900px; 
+	margin: 0 auto; /* centre large singles */
+	display: block;
+}
+
+
 		</style>
 	</head>
 	<body class="is-preload">
