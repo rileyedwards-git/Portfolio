@@ -12,18 +12,23 @@
 				display: flex;
 				justify-content: center;
 				align-items: flex-start;
-				gap: 10px;
+				gap: 8px; /* small consistent gap */
 				margin-bottom: 15px;
 			}
+
 			.screenshot-row img {
-				width: 350px;
+				width: 100%;
+				max-width: 100%; 
+				flex: 1 1 0; /* forces equal sizing */
 				height: auto;
 				border-radius: 8px;
 				display: block;
 				object-fit: contain;
 			}
+
 			.screenshot-row.single img {
-				width: 720px;
+				flex: 1 1 auto;
+				max-width: 100%; /* full width for single images */
 			}
 		</style>
 	</head>
